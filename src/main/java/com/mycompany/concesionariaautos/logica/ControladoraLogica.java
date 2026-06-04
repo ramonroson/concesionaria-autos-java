@@ -36,8 +36,8 @@ public class ControladoraLogica {
         controlPersis.borrarAuto(numeroAuto);
     }
 
-    public Automoviles traerAutos(int numeroAuto) {
-        return controlPersis.traerAutos(numeroAuto);
+    public Automoviles traerAuto(int numeroAuto) {
+        return controlPersis.traerAuto(numeroAuto);
     }
 
     public void modificarAuto(Automoviles auto,String modelo, String marca, String motor, String color, String patente, int cantidadPuertas) {

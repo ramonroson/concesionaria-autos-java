@@ -1,4 +1,3 @@
-
 package com.mycompany.concesionariaautos.igu;
 
 import com.mycompany.concesionariaautos.logica.Automoviles;
@@ -6,20 +5,17 @@ import com.mycompany.concesionariaautos.logica.ControladoraLogica;
 import javax.swing.JDialog;
 import javax.swing.JOptionPane;
 
-
 public class AltaAutomoviles extends javax.swing.JFrame {
-    
+
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(AltaAutomoviles.class.getName());
     ControladoraLogica control = null;
     Automoviles auto = null;
 
-    
     public AltaAutomoviles() {
         control = new ControladoraLogica();
         initComponents();
     }
 
-    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -257,15 +253,33 @@ public class AltaAutomoviles extends javax.swing.JFrame {
     }//GEN-LAST:event_btnLimpiarActionPerformed
 
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
-        int cantPuertas = Integer.parseInt(txtCantPuertas.getText());
-        control.guardarAuto(txtModelo.getText(),txtMarca.getText(),txtMotor.getText(),txtColor.getText(),txtPatente.getText(),cantPuertas);
-        mostrarMensaje("Auto cargado Correctamente", "Info","Operacion Exitosa");
-        Principal pantallaPrincipal = new  Principal();
+        String modelo = txtModelo.getText();
+        String marca = txtMarca.getText();
+        String motor = txtMotor.getText();
+        String color = txtColor.getText();
+        String patente = txtPatente.getText();
+        String puertasTexto = txtCantPuertas.getText();
+
+        if (modelo.trim().isEmpty() || marca.trim().isEmpty() || motor.trim().isEmpty() || color.trim().isEmpty() || patente.trim().isEmpty() || puertasTexto.trim().isEmpty()) {
+            mostrarMensaje("Error no puede dejar casillas en blanco", "Error", "Error");
+            return;
+        }
+        int cantPuertas;
+        try {
+            cantPuertas = Integer.parseInt(puertasTexto);
+        } catch (NumberFormatException e) {
+            mostrarMensaje("La cantidad de puertas debe ser un número",
+                    "Error", "Error");
+            return;
+        }
+        control.guardarAuto(modelo, marca, motor, color, patente, cantPuertas);
+        mostrarMensaje("Auto cargado Correctamente", "Info", "Operacion Exitosa");
+        Principal pantallaPrincipal = new Principal();
         pantallaPrincipal.setVisible(true);
         pantallaPrincipal.setLocationRelativeTo(null);
         this.dispose();
-        
-      
+
+
     }//GEN-LAST:event_btnGuardarActionPerformed
 
     private void btnAtrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasActionPerformed
@@ -275,21 +289,19 @@ public class AltaAutomoviles extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_btnAtrasActionPerformed
 
-    public void mostrarMensaje(String mensaje, String tipo,String titulo){
-            JOptionPane optionPane = new JOptionPane(mensaje);
-            if(tipo.equals("Info")){
-                optionPane.setMessageType(JOptionPane.INFORMATION_MESSAGE);
-            }else if(tipo.equals("Error")){
-                optionPane.setMessageType(JOptionPane.ERROR_MESSAGE);
-            }
-                JDialog dialog = optionPane.createDialog(titulo);
-                dialog.setAlwaysOnTop(true);
-                dialog.setVisible(true);
-        
+    public void mostrarMensaje(String mensaje, String tipo, String titulo) {
+        JOptionPane optionPane = new JOptionPane(mensaje);
+        if (tipo.equals("Info")) {
+            optionPane.setMessageType(JOptionPane.INFORMATION_MESSAGE);
+        } else if (tipo.equals("Error")) {
+            optionPane.setMessageType(JOptionPane.ERROR_MESSAGE);
+        }
+        JDialog dialog = optionPane.createDialog(titulo);
+        dialog.setAlwaysOnTop(true);
+        dialog.setVisible(true);
 
+    }
 
-    }          
-  
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAtras;
     private javax.swing.JButton btnGuardar;

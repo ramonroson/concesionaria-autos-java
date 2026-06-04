@@ -27,7 +27,7 @@ public class ControladoraPersistencia {
         }
         }
 
-    public Automoviles traerAutos(int numeroAuto) {
+    public Automoviles traerAuto(int numeroAuto) {
         return autoJpa.findAutomoviles(numeroAuto);
     }
 

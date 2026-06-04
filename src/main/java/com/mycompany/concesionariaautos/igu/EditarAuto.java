@@ -26,7 +26,7 @@ public class EditarAuto extends javax.swing.JFrame {
     }
     
     private void cargarDatos(int numeroAuto){
-        this.autoNuevo = control.traerAutos(numeroAuto);
+        this.autoNuevo = control.traerAuto(numeroAuto);
         txtModelo.setText(autoNuevo.getModelo());
         txtMarca.setText(autoNuevo.getMarca());
         txtMotor.setText(autoNuevo.getMotor());
