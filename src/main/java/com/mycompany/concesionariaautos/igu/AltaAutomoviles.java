@@ -260,7 +260,11 @@ public class AltaAutomoviles extends javax.swing.JFrame {
         int cantPuertas = Integer.parseInt(txtCantPuertas.getText());
         control.guardarAuto(txtModelo.getText(),txtMarca.getText(),txtMotor.getText(),txtColor.getText(),txtPatente.getText(),cantPuertas);
         mostrarMensaje("Auto cargado Correctamente", "Info","Operacion Exitosa");
+        Principal pantallaPrincipal = new  Principal();
+        pantallaPrincipal.setVisible(true);
+        pantallaPrincipal.setLocationRelativeTo(null);
         this.dispose();
+        
       
     }//GEN-LAST:event_btnGuardarActionPerformed
 
