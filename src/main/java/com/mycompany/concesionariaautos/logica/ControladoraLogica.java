@@ -21,7 +21,7 @@ public class ControladoraLogica {
         autoNuevo.setCantPuertas(cantPuertas);
         
         //LLAMAMOS A LA PERSISTENCIA PARA QUE PUEDA CREAR UN NUEVO AUTO
-        this.controlPersis.agregarAuto(autoNuevo);  
+        controlPersis.agregarAuto(autoNuevo);  
     }
     
    public void editarAuto(Automoviles auto){
