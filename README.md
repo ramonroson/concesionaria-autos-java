@@ -91,7 +91,7 @@ Aquí vemos los vehículos que tenemos
 
 ### Eliminación de un vehículo
 
-![Eliminación de un vehículo](Capturas%20Proyecto%20Concesionaria/Edicion/edicionProyectoConcesionaria.png)
+![Eliminación de un vehículo](Capturas%20Proyecto%20Concesionaria/Consulta%20y%20Baja/bajaDeAutomovil.png)
 
 ### Resultado luego de la Eliminación
 
