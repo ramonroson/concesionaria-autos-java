@@ -75,19 +75,27 @@ El proyecto se encuentra organizado por capas para separar responsabilidades:
 
 ![Resultado busqueda por modelo](Capturas%20Proyecto%20Concesionaria/Consulta%20y%20Baja/Busqueda/PorModelo/resultadoBusquedaPorModelo.png)
 
+### Visualización de vehículos
+Aquí vemos los vehículos que tenemos
+
+![Visualización de vehículos](Capturas%20Proyecto%20Concesionaria/Consulta%20y%20Baja/consultaProyectoConcesionaria1.png)
+
 ### Edición de vehículos
-Aquí vemos como editamos un vehículo de la lista anterior vista.
 
-![Edición de Vehículos](Capturas%20Proyecto%20Concesionaria/Edicion/edicionProyectoConcesionaria.png)
 
-### Consulta luego de una edición
-Aquí visulizamos la consulta luego de la edición de dicho vehículo
+![Edición de vehículos](Capturas%20Proyecto%20Concesionaria/Edicion/edicionProyectoConcesionaria.png)
 
-![Consulta luego de editar](Capturas%20Proyecto%20Concesionaria/Consulta%20y%20Baja/consultaLuegoDeEdicionProyectoConcesionaria2.png)
+### Consulta luego de la edición
 
-### Consulta luego de una eliminación
+![Consulta luego de la edición](Capturas%20Proyecto%20Concesionaria/Consulta%20y%20Baja/consultaLuegoDeEliminarProyectoConcesionaria3.png)
 
-![Consulta luego de eliminar](Capturas%20Proyecto%20Concesionaria/Consulta%20y%20Baja/consultaLuegoDeEliminarProyectoConcesionaria3.png)
+### Eliminación de un vehículo
+
+![Eliminación de un vehículo](Capturas%20Proyecto%20Concesionaria/Edicion/edicionProyectoConcesionaria.png)
+
+### Resultado luego de la Eliminación
+
+![Resultado luego de la Eliminación](Capturas%20Proyecto%20Concesionaria/Consulta%20y%20Baja/resultadoDespuesDeLaBaja.png)
 
 ## Lo que aprendí durante el desarrollo
 
