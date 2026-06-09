@@ -47,6 +47,34 @@ El proyecto se encuentra organizado por capas para separar responsabilidades:
 
 ![Consulta de Vehículos](Capturas%20Proyecto%20Concesionaria/Consulta%20y%20Baja/consultaProyectoConcesionaria1.png)
 
+### Busqueda de vehículos
+
+![Busqeuda de vehículos](Capturas%20Proyecto%20Concesionaria/Consulta%20y%20Baja/Busqueda/MenuPrincipalBusqueda.png)
+
+### Busqueda por patente
+
+![Busqueda por patente](Capturas%20Proyecto%20Concesionaria/Consulta%20y%20Baja/Busqueda/PorPatente/busquedaPorPatente.png)
+
+### Resultado busqeuda por patente
+
+![Resultado busqeuda por patente](Capturas%20Proyecto%20Concesionaria/Consulta%20y%20Baja/Busqueda/PorPatente/resultadoBusquedaPorPatente.png)
+
+### Busqueda por marca
+
+![Busqueda por marca](Capturas%20Proyecto%20Concesionaria/Consulta%20y%20Baja/Busqueda/PorMarca/busquedaPorMarca.png)
+
+### Resultado busqueda por marca
+
+![Resultado busqeuda por marca](Capturas%20Proyecto%20Concesionaria/Consulta%20y%20Baja/Busqueda/PorMarca/resultadoBusquedaPorMarca.png)
+
+### Busqueda por modelo
+
+![Busqueda por modelo](Capturas%20Proyecto%20Concesionaria/Consulta%20y%20Baja/Busqueda/PorModelo/busquedaPorModelo.png)
+
+### Resultado busqueda por modelo
+
+![Resultado busqueda por modelo](Capturas%20Proyecto%20Concesionaria/Consulta%20y%20Baja/Busqueda/PorModelo/resultadoBusquedaPorModelo.png)
+
 ### Edición de vehículos
 Aquí vemos como editamos un vehículo de la lista anterior vista.
 
