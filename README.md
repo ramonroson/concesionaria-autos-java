@@ -87,7 +87,7 @@ Aquí vemos los vehículos que tenemos
 
 ### Consulta luego de la edición
 
-![Consulta luego de la edición](Capturas%20Proyecto%20Concesionaria/Consulta%20y%20Baja/consultaLuegoDeEliminarProyectoConcesionaria3.png)
+![Consulta luego de la edición](Capturas%20Proyecto%20Concesionaria/Edicion/consultaLuegoDeEditarProyectoConcesionaria3.png)
 
 ### Eliminación de un vehículo
 
